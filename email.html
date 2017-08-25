@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="reset.css" rel="stylesheet" type="text/css">
+	<link href="modal.css" rel="stylesheet" type="text/css">
+	<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="modal.js"></script>
+	<script src="topbtn.js"></script>
+	<title>EMAIL | WEBSEC</title>
+	<link rel="icon" type="image/png" href="icons/favicon.png">
+
+	<script>
+	  function resizeIframe(obj) {
+	    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+	  }
+	</script>
+
+
+</head>
+
+<body id="emailPage">
+
+	<button onclick="topFunction()" id="topBtn"><img src="icons/topbtn.png" /></button>
+
+	<header>
+		<a href="frontpage"><img src="icons/logo.png"></a>
+
+		<ul>
+			<li><a href="#PHISHING">PHISHING</a></li>
+			<li><a href="#SCAMS">SCAMS</a></li>
+			<li><a href="#SPOOF">SPOOF</a></li>
+			<li><a href="#TRACKING">TRACKING</a></li>
+		</ul>
+
+
+	</header>
+
+
+	<div class="content">
+		<h1>EMAIL</h1>
+		<p>In this category we will look how you can protect yourself from malicious emails. Because of how little security email has at its core, it has become the most popular way for scammers, hackers and other people with bad intentions to gain money, personal
+			information, or access.</p>
+		<p>Some of the techniques used to reach their goals are phishing scams, classic scams, spreading of malware, and tracking of emails.</p>
+		<p>We will give a brief rundown of how these techniques work, and what you can do to recognize them and keep your safety intact.</p>
+
+		<h2 id="PHISHING">PHISHING</h2>
+
+		<p>Phishing emails are emails that trick you into giving away confidential or private information such as passwords, Bank ID, PIN numbers, etc.</p>
+		<p>The most common way this takes place, is that you get an email that tells you to go to a website and enter your information. This email might look like it's from a legit source with all the graphics and correct sender's address, but this website will
+			log all the information you type in.</p>
+
+		<!-- Trigger the Modal -->
+		<img class="myImg" src="img/twitterphishing.png" alt="Twitter phishing email">
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+			<!-- The Close Button -->
+			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+			<!-- Modal Content (The Image) -->
+			<img class="modal-content" id="img01">
+
+			<!-- Modal Caption (Image Text) -->
+			<div id="caption"></div>
+		</div>
+
+
+
+		<p>The link in the email above would probably take you to a login screen identical to Twitter's, but when you write in your login information it will store it for the scammer to use later on. It can be very hard to notice if you have given out personal
+			information this way. If the scammer knows what he is doing, he will redirect to the real twitter page and you will be logged in. They might not use the information for a while either so it can be hard to pinpoint when you gave away the information.</p>
+
+		<div class="infobox-container">
+			<div class="triangle-l"></div>
+			<div class="triangle-r"></div>
+			<div class="infobox">
+				<h3><span>HOW TO AVOID PHISHING SCAMS</span></h3>
+				<ul>
+					<li>Don't click links in emails. Visit the website manually and go to the service you need.</li>
+					<li>Never give away personal information over email.</li>
+					<li>If you suspect you have been the victim of a phishing attack, make sure to change your password everywhere you use the same password.</li>
+					<li>Check the reply to field. It is rarely used outside of scams.</li>
+				</ul>
+			</div>
+		</div>
+
+		<h2 id="SCAMS">EMAIL SCAMS</h2>
+		<p>Email is a very simple way to reach a lot of people, because of this it has become a invaluable tool for scammers. These scams usually work by the scammer claiming to have a large fortune, but it's unaccessible and the only way to gain access is to
+			pay. Another popular scam are romance scams. These scams will make it seem like someone is very interested in getting to know you. If you reply to this email you will probably be asked to pay for a plane ticket or similar so they can come visit you.</p>
+
+		<img class="myImg" src="img/emailscam.png" alt="Email scam">
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+			<!-- The Close Button -->
+			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+			<!-- Modal Content (The Image) -->
+			<img class="modal-content" id="img01">
+
+			<!-- Modal Caption (Image Text) -->
+			<div id="caption"></div>
+		</div>
+
+		<p>What applies to all scams is that they either want your personal information or money. Another thing the scams have in common, is that they use Social Engineering as the main tool. This means that they manipulate the victim and plays on psychological
+			factors like: greed, loneliness, and trust.</p>
+
+		<p>To elaborate, social engineering is essentially to hack people. In order to get access to something, they will contact someone who can help provide this, and pretend to be someone who is authorized to access it. If you want access to the server room
+			somewhere, you could tell an employee that you forgot your key while you need to fix something right away, and have no time to lose. If it’s acted convincing enough, the employee is likely to help, as the business could loose a lot of money otherwise,
+			and there is no time to get confirmation about the technicians identity. This is however just one of a countless amount of examples.</p>
+
+
+
+		<p>If you have basic information about yourself easily accessible to the public on social media or otherwise, it could in many cases be easy to call your phone provider to reset your password on their client login, or possibly change your subscription
+			type, maybe even close down your account. In short, social engineering can be used to make your life very hard.</p>
+
+		<div class="infobox-container">
+			<div class="triangle-l"></div>
+			<div class="triangle-r"></div>
+			<div class="infobox">
+				<h3><span>HOW TO RECOGNIZE EMAIL SCAMS</span></h3>
+				<ul>
+					<li>If something seems to good to be true, it probably is.</li>
+					<li>Use a search engine to search for a snippet of the text to see if it's a known scam.</li>
+					<li>Look for spelling mistakes (scammers will often use translating applications.)</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<h2 id="SPOOF">SPOOFED EMAILS</h2>
+		<p>A spoofed email, is an email with a forged senders address. Because email at it's core doesn't have any authentication it is really simple to forge a senders address. It can be done by visiting various websites or through applications written for this
+			use. An example of how spoofed emails can be used are to make it seem like an email is from a friend. The email would then contain <a href="https://actionscript.no/malware">malware</a>  that looks for email addresses on your system. Say someone finds the email addresses of two friends, Rick and Jenna. It can then send an
+			infected email to Jenna disguised as a email from Rick and continue this chain from Jennas computer.</p>
+		<p>There's something called SPF (Sender Policy Framework). This is a email-validation system made to prevent spoofing. It is unfortunately not used all that much at this time, despite being very easy to set up. The email would be likely to end up in the spam
+			folder, rather than the inbox if SPF is in place.</p>
+
+		<h2>TRY IT YOURSELF (BE KIND)</h2>
+
+		<form action="spoof.php" method="post">
+			<div class="form-group spoof">
+				<input placeholder="From Name: " type="text" class="form-control" name="FromName"><br>
+				<input placeholder="From Email: " type="text" class="form-control" name="FromEmail"><br>
+				<input placeholder="Recipient Email: " type="text" class="form-control" name="RecipientEmail"><br>
+				<input placeholder="Subject: " type="text" class="form-control" name="Subject"><br>
+				<textarea placeholder="Email content: " class="form-control" rows="5" name="Content"></textarea>
+				<button type="submit" class="btn btn-default">SEND</button>
+			</div>
+		</form>
+
+
+
+
+
+		<div class="infobox-container">
+			<div class="triangle-l"></div>
+			<div class="triangle-r"></div>
+			<div class="infobox">
+				<h3><span>WAYS TO IDENTIFY FAKE EMAILS</span></h3>
+				<ul>
+					<li>Be skeptical of the language used; is the sender of the email writing in the same language and style that a person would?</li>
+					<li>If possible verify the content with the sender.</li>
+					<li>Never assume email is safe. Be skeptical what links you click or what information you share, and who you share it with.</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<h2 id="TRACKING">EMAIL TRACKING</h2>
+		<p>In some cases it can be beneficial for criminals to track emails. By tracking emails you can gain access to information about who is reading it, when it was read, and where you are when you read it.</p>
+		<p>They can get the who and when by simply using the functionality to confirm when an email has been delivered, and the function to add a confirmation when the mail has been opened. There are a couple of ways they can get your location. They can add a unique
+			link that tracks the IP-address of the person visiting, or they can add a picture in the email that has to be downloaded from a server where they can store the IP-address of the people downloading.</p>
+
+
+		<!-- Begin MailChimp Signup Form -->
+
+
+		<div id="mc_embed_signup">
+			<form action="//actionscript.us15.list-manage.com/subscribe/post?u=ac9be2162991a84bb8e4944ef&amp;id=5876037fc6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<div id="mc_embed_signup_scroll">
+					<label for="mce-EMAIL">Subscribe to our mailing list</label>
+					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ac9be2162991a84bb8e4944ef_5876037fc6" tabindex="-1" value=""></div>
+					<div class="clear"><input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+				</div>
+			</form>
+		</div>
+
+		<!--End mc_embed_signup-->
+		<div id="socialMedia">
+			<p>Follow us on social media!</p>
+			<a href="https://www.facebook.com/websec/"><img src="icons/fbLogo.png" alt="Facebook link"></a>
+			<a href="https://twitter.com/_websec_"><img src="icons/twitterLogo.png" alt="Twitter link"></a>
+		</div>
+
+
+	</div>
+
+
+</body>
+
+</html>

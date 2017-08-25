@@ -1,0 +1,57 @@
+RewriteEngine On
+
+#index.js fix
+DirectoryIndex index.html
+
+#Headers
+Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
+Header append Vary: Accept-Encoding
+Header set X-Content-Type-Options nosniff
+
+#Need to make all script/style code as separate files for this to work. Cannot be inline. Can't bother fixing atm.
+#Header set Content-Security-Policy "default-src 'self' *.bootstrapcdn.com *.mailchimp.com *.googleapis.com *.gstatic.com"
+
+Header set X-XSS-Protection "1; mode=block"
+Header set X-Frame-Options DENY
+Header set Referrer-Policy: strict-origin-when-cross-origin
+
+#Force HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#Remove www
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+
+#Remove file extention in URL
+#check that filename is not a directory
+RewriteCond %{REQUEST_FILENAME} !-d
+#check that its a regular file
+RewriteCond %{REQUEST_FILENAME}\.php -f
+#remove what comes after the dot from url
+RewriteRule ^(.*)$ $1.php
+
+#check that filename is not a directory
+RewriteCond %{REQUEST_FILENAME} !-d
+#check that its a regular file
+RewriteCond %{REQUEST_FILENAME}\.html -f
+#remove what comes after the dot from url
+RewriteRule ^(.*)$ $1.html
+
+# Enable expirations
+ExpiresActive On 
+# Default directive
+ExpiresDefault "access plus 1 month"
+# My favicon
+ExpiresByType image/x-icon "access plus 1 year"
+# Images
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/jpg "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+# CSS
+ExpiresByType text/css "access plus 1 month"
+# Javascript
+ExpiresByType application/javascript "access plus 1 year"
